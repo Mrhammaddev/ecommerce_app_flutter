@@ -3,9 +3,14 @@ import 'package:ecommerce_app_flutter/Utils/images.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class HomeView extends StatefulWidget {
+  const HomeView({super.key});
 
+  @override
+  State<HomeView> createState() => _HomeViewState();
+}
+
+class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,13 +22,22 @@ class HomeScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  "Welcome,",
-                  style: Theme.of(context).textTheme.headlineMedium,
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "Welcome,",
+                    style: Theme.of(context).textTheme.headlineMedium,
+                  ),
                 ),
-                Text(
-                  "Our Fashion App,",
-                  style: Theme.of(context).textTheme.labelLarge,
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "Our Fashion App,",
+                    style: Theme.of(context).textTheme.labelLarge,
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 Row(
                   children: [
@@ -45,7 +59,7 @@ class HomeScreen extends StatelessWidget {
                             contentPadding: EdgeInsets.all(14),
                             border: OutlineInputBorder(
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(25)),
+                                  BorderRadius.all(Radius.circular(50)),
                               borderSide: BorderSide.none,
                             ),
                             hintText: "Search",
@@ -54,16 +68,18 @@ class HomeScreen extends StatelessWidget {
                     ),
                     SizedBox(width: 8),
                     Container(
-                      height: 50,
-                      width: 50,
-                      // padding: EdgeInsets.all(8),
+                      height: 55,
+                      width: 55,
+                      // clipBehavior: Clip.antiAliasWithSaveLayer,
+                      padding: EdgeInsets.all(14.5),
                       decoration: BoxDecoration(
-                          color: Theme.of(context).primaryColor,
-                          shape: BoxShape.circle),
-                      child: Image.asset(
-                        CustomIcons.FILTER,
-                        fit: BoxFit.cover,
+                        color: Theme.of(context).primaryColor,
+                        shape: BoxShape.circle,
+                        // image: DecorationImage(
+                        //   image: AssetImage(CustomIcons.FILTER),
+                        // ),
                       ),
+                      child: Image.asset(CustomIcons.FILTER),
                     )
                   ],
                 )

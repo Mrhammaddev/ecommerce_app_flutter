@@ -1,4 +1,7 @@
 import 'package:ecommerce_app_flutter/Utils/images.dart';
+import 'package:ecommerce_app_flutter/Views/LandingScreens/alerts.dart';
+import 'package:ecommerce_app_flutter/Views/LandingScreens/cart.dart';
+import 'package:ecommerce_app_flutter/Views/LandingScreens/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
@@ -14,10 +17,10 @@ class LandingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Widget> _buildScreens() {
       return [
-        HomeScreen(),
-        HomeScreen(),
-        HomeScreen(),
-        HomeScreen(),
+        HomeView(),
+        CartView(),
+        AlertView(),
+        ProfileView(),
       ];
     }
 

@@ -40,6 +40,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
     return Scaffold(
       body: Column(
         children: [
+          SizedBox(height: 14),
           Expanded(
             child: ScrollConfiguration(
               behavior: MyBehavior(),
@@ -160,8 +161,7 @@ class OnBoardContent extends StatelessWidget {
             alignment: Alignment.bottomLeft,
             child: Text(
               title,
-              style: context.theme.textTheme.headline5!
-                  .merge(TextStyle(fontWeight: FontWeight.w900, fontSize: 26)),
+              style: context.theme.textTheme.headlineMedium,
               textAlign: TextAlign.start,
             ),
           ),
@@ -173,7 +173,7 @@ class OnBoardContent extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 19.0),
           child: Text(
             description,
-            style: context.theme.textTheme.bodyText1!.merge(TextStyle()),
+            style: context.theme.textTheme.bodyMedium,
             textAlign: TextAlign.start,
           ),
         ),

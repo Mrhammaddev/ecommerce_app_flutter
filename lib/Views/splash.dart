@@ -40,8 +40,7 @@ class _SplashScreenState extends State<SplashScreen> {
         ),
         Text(
           "Ecommerce App",
-          style: TextStyle(
-              color: Colors.white, fontWeight: FontWeight.w600, fontSize: 22),
+          style: Theme.of(context).textTheme.displaySmall!.merge(TextStyle()),
         )
       ],
     ));
