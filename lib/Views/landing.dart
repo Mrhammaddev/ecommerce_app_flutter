@@ -1,7 +1,8 @@
+import 'package:ecommerce_app_flutter/Utils/images.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
-import 'home.dart';
+import 'LandingScreens/home.dart';
 
 final PersistentTabController bottomTabController =
     PersistentTabController(initialIndex: 0);
@@ -23,38 +24,46 @@ class LandingScreen extends StatelessWidget {
     List<PersistentBottomNavBarItem> _navBarsItems() {
       return [
         PersistentBottomNavBarItem(
-          icon: Icon(
-            Icons.home,
-            size: 25,
+          icon: Image.asset(
+            CustomIcons.HOME,
+            color: Theme.of(context).primaryColor,
+            height: 20,
+            width: 20,
           ),
           title: ("Home"),
           activeColorPrimary: Theme.of(context).primaryColor,
           inactiveColorPrimary: Theme.of(context).primaryColor,
         ),
         PersistentBottomNavBarItem(
-          icon: Icon(
-            Icons.bookmark,
-            size: 25,
+          icon: Image.asset(
+            CustomIcons.CART,
+            color: Theme.of(context).primaryColor,
+            height: 20,
+            width: 20,
           ),
-          title: ("Bookmarks"),
+          title: ("Cart"),
           activeColorPrimary: Theme.of(context).primaryColor,
           inactiveColorPrimary: Theme.of(context).primaryColor,
         ),
         PersistentBottomNavBarItem(
-          icon: Icon(
-            Icons.book_online_rounded,
-            size: 25,
+          icon: Image.asset(
+            CustomIcons.NOTIFICATION,
+            color: Theme.of(context).primaryColor,
+            height: 20,
+            width: 20,
           ),
-          title: ("My Courses"),
+          title: ("Alerts"),
           activeColorPrimary: Theme.of(context).primaryColor,
           inactiveColorPrimary: Theme.of(context).primaryColor,
         ),
         PersistentBottomNavBarItem(
-          icon: Icon(
-            Icons.message,
-            size: 25,
+          icon: Image.asset(
+            CustomIcons.PROFILE,
+            color: Theme.of(context).primaryColor,
+            height: 20,
+            width: 20,
           ),
-          title: ("Home"),
+          title: ("Profile"),
           activeColorPrimary: Theme.of(context).primaryColor,
           inactiveColorPrimary: Theme.of(context).primaryColor,
         ),

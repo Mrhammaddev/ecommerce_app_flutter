@@ -1,6 +1,7 @@
 // ignore_for_file: avoid_print, must_be_immutable
 
 import 'package:ecommerce_app_flutter/Helpers/scroll_behaviour.dart';
+import 'package:ecommerce_app_flutter/Views/Auth/login.dart';
 import 'package:ecommerce_app_flutter/Views/landing.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -89,7 +90,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                         );
                       } else {
                         Navigator.pushReplacement(
-                            context, FadeRoute1(LandingScreen()));
+                            context, FadeRoute1(LoginScreen()));
                       }
                     });
                   },
@@ -105,6 +106,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                           CustomIcons.ARROW_BACK,
                           height: 22,
                           width: 22,
+                          color: context.theme.scaffoldBackgroundColor,
                         ),
                       )),
                 ),
@@ -171,6 +173,7 @@ class OnBoardContent extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 19.0),
           child: Text(
             description,
+            style: context.theme.textTheme.bodyText1!.merge(TextStyle()),
             textAlign: TextAlign.start,
           ),
         ),

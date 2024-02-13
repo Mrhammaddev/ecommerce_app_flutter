@@ -1,3 +1,5 @@
+import 'package:ecommerce_app_flutter/Views/Auth/login.dart';
+import 'package:ecommerce_app_flutter/Views/landing.dart';
 import 'package:ecommerce_app_flutter/Views/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: Themes.light,
       darkTheme: Themes.dark,
       themeMode: ThemeService().theme,
-      home: SplashScreen(),
+      home: LandingScreen(),
     );
   }
 }
