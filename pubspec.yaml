@@ -1,16 +1,14 @@
 name: ecommerce_app_flutter
 description: A new Flutter project.
 
-
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.3 <4.0.0'
+  sdk: ">=3.0.3 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-
 
   cupertino_icons: ^1.0.2
   google_fonts: ^5.1.0
@@ -19,7 +17,7 @@ dependencies:
   get_storage: ^2.1.1
   introduction_screen: ^3.1.11
   font_awesome_flutter: ^10.7.0
-
+  flutter_staggered_grid_view: ^0.7.0
 
 dev_dependencies:
   flutter_test:
@@ -27,10 +25,7 @@ dev_dependencies:
 
   flutter_lints: ^2.0.0
 
-
 flutter:
-
-
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:

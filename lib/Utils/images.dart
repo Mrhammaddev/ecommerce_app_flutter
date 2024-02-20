@@ -1,5 +1,12 @@
 class Images {
   static const String SPLASH = "assets/images/splash.jpg";
+  static const String BAG = "assets/images/bag.png";
+  static const String SHOE1 = "assets/images/shoe1.jpeg";
+  static const String SHOE2 = "assets/images/shoe2.jpeg";
+  static const String SHOE3 = "assets/images/shoe3.jpeg";
+  static const String SHOE4 = "assets/images/shoe4.jpeg";
+  static const String SHOE5 = "assets/images/shoe5.jpeg";
+  static const String SHOE6 = "assets/images/shoe6.jpeg";
 }
 
 class CustomIcons {

@@ -11,6 +11,7 @@ class Themes {
     appBarTheme: AppBarTheme(color: Colors.white),
     iconTheme: IconThemeData(color: config.Colors().mainColorBlack),
     focusColor: config.Colors().greyTooLight,
+    cardColor: Color(0xffDCDCDC),
     textTheme: TextTheme(
       displayLarge: GoogleFonts.poppins(
           fontSize: 34.0,
@@ -48,13 +49,13 @@ class Themes {
           letterSpacing: 0,
           color: config.Colors().mainColorBlack),
       titleMedium: GoogleFonts.poppins(
-          fontSize: 22.0,
+          fontSize: 18.0,
           fontWeight: FontWeight.w600,
           letterSpacing: 0,
           color: config.Colors().mainColorBlack),
       titleSmall: GoogleFonts.poppins(
-          fontSize: 20.0,
-          fontWeight: FontWeight.w500,
+          fontSize: 16.0,
+          fontWeight: FontWeight.w600,
           letterSpacing: 0,
           color: config.Colors().mainColorBlack),
       bodyLarge: GoogleFonts.poppins(
@@ -83,10 +84,10 @@ class Themes {
           letterSpacing: 0,
           color: config.Colors().greyLight),
       labelSmall: GoogleFonts.poppins(
-          fontSize: 14.5,
+          fontSize: 13,
           letterSpacing: 0,
           // fontWeight: FontWeight.w500,
-          color: config.Colors().greyLight),
+          color: Color.fromARGB(255, 106, 106, 106)),
     ),
   );
   static final dark = ThemeData.dark().copyWith(
@@ -96,7 +97,8 @@ class Themes {
     bottomAppBarTheme: BottomAppBarTheme(color: Colors.grey[800]),
     appBarTheme: AppBarTheme(color: Colors.grey[800]),
     iconTheme: IconThemeData(color: Colors.white),
-    focusColor: config.Colors().greyTooLight,
+    focusColor: config.Colors().greyDark,
+    cardColor: Color(0xFF2C2C2C),
     textTheme: TextTheme(
       displayLarge: GoogleFonts.poppins(
           fontSize: 34.0,
@@ -134,14 +136,14 @@ class Themes {
           fontWeight: FontWeight.bold,
           color: config.Colors().whit),
       titleMedium: GoogleFonts.poppins(
-          fontSize: 22.0,
+          fontSize: 18.0,
           letterSpacing: 0,
           fontWeight: FontWeight.w600,
           color: config.Colors().whit),
       titleSmall: GoogleFonts.poppins(
-          fontSize: 20.0,
+          fontSize: 16.0,
           letterSpacing: 0,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w600,
           color: config.Colors().whit),
       bodyLarge: GoogleFonts.poppins(
           fontSize: 17,
@@ -169,10 +171,10 @@ class Themes {
           // fontWeight: FontWeight.w500,
           color: config.Colors().greyLight),
       labelSmall: GoogleFonts.poppins(
-          fontSize: 14.5,
+          fontSize: 13,
           letterSpacing: 0,
           // fontWeight: FontWeight.w500,
-          color: config.Colors().greyLight),
+          color: Color.fromARGB(255, 106, 106, 106)),
     ),
   );
 }
