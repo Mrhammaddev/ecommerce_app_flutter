@@ -80,9 +80,8 @@ class LandingScreen extends StatelessWidget {
       items: _navBarsItems(),
       confineInSafeArea: true,
 
-      backgroundColor: Theme.of(context)
-          .bottomAppBarTheme
-          .color!, // Default is Colors.white.
+      backgroundColor:
+          Theme.of(context).scaffoldBackgroundColor, // Default is Colors.white.
       handleAndroidBackButtonPress: true, // Default is true.
       resizeToAvoidBottomInset:
           true, // This needs to be true if you want to move up the screen when keyboard appears. Default is true.
