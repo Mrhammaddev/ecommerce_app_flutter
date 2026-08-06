@@ -12,22 +12,21 @@ simpleAppBarWidget(BuildContext context, String title) {
     //   statusBarBrightness: Brightness.dark,
     // ),
     centerTitle: true,
+    scrolledUnderElevation: 0,
     title: Text(
       title,
-      style: Theme.of(context)
-          .textTheme
-          .headline6!
-          .merge(const TextStyle(fontWeight: FontWeight.w600, fontSize: 17)),
+      style: Theme.of(context).textTheme.bodyMedium!.merge(
+        const TextStyle(fontWeight: FontWeight.w600, fontSize: 17),
+      ),
     ),
     backgroundColor: Theme.of(context).scaffoldBackgroundColor,
 
     //this is only for dark/light mode check
-
     actions: [
       IconButton(
         onPressed: ThemeService().switchTheme,
-        icon: Icon(FontAwesomeIcons.lightbulb),
-      )
+        icon: FaIcon(FontAwesomeIcons.bell),
+      ),
     ],
 
     // actions: [

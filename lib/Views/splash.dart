@@ -25,24 +25,27 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Stack(
-      alignment: Alignment.center,
-      children: [
-        Container(
-          decoration: BoxDecoration(
+      body: Stack(
+        alignment: Alignment.center,
+        children: [
+          Container(
+            decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage(Images.SPLASH),
-                  fit: BoxFit.cover,
-                  colorFilter: ColorFilter.mode(
-                    Colors.black.withOpacity(0.5),
-                    BlendMode.colorBurn,
-                  ))),
-        ),
-        Text(
-          "Ecommerce App",
-          style: Theme.of(context).textTheme.displaySmall!.merge(TextStyle()),
-        )
-      ],
-    ));
+                image: AssetImage(Images.SPLASH),
+                fit: BoxFit.cover,
+                colorFilter: ColorFilter.mode(
+                  Colors.black.withOpacity(0.5),
+                  BlendMode.colorBurn,
+                ),
+              ),
+            ),
+          ),
+          Text(
+            "Ecommerce App",
+            style: Theme.of(context).textTheme.displaySmall!.merge(TextStyle()),
+          ),
+        ],
+      ),
+    );
   }
 }

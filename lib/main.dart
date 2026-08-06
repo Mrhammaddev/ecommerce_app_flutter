@@ -1,10 +1,8 @@
-import 'package:ecommerce_app_flutter/Views/Auth/login.dart';
 import 'package:ecommerce_app_flutter/Views/landing.dart';
 import 'package:ecommerce_app_flutter/Views/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-
 import 'Theme/app_theme.dart';
 import 'Theme/theme_service.dart';
 

@@ -24,9 +24,7 @@ class LoginScreen extends StatelessWidget {
             // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             // crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              SizedBox(
-                height: kHeight(context) / 8,
-              ),
+              SizedBox(height: kHeight(context) / 8),
               Image.asset(
                 ThemeService().box.read('isThemeMode') == true
                     ? CustomIcons.LOGO_DARK
@@ -34,9 +32,7 @@ class LoginScreen extends StatelessWidget {
                 // height: kHeight(context) / 5,
                 width: kWidth(context) / 2,
               ),
-              SizedBox(
-                height: kHeight(context) / 18,
-              ),
+              SizedBox(height: kHeight(context) / 18),
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -54,9 +50,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
-                height: kHeight(context) / 20,
-              ),
+              SizedBox(height: kHeight(context) / 20),
               Column(
                 children: [
                   TextFormField(
@@ -72,12 +66,14 @@ class LoginScreen extends StatelessWidget {
                       //       color: Theme.of(context).secondaryHeaderColor),
                       // ),
                       enabledBorder: UnderlineInputBorder(
-                        borderSide:
-                            BorderSide(color: Theme.of(context).focusColor),
+                        borderSide: BorderSide(
+                          color: Theme.of(context).focusColor,
+                        ),
                       ),
                       focusedBorder: UnderlineInputBorder(
-                        borderSide:
-                            BorderSide(color: Theme.of(context).focusColor),
+                        borderSide: BorderSide(
+                          color: Theme.of(context).focusColor,
+                        ),
                       ),
                     ),
                   ),
@@ -95,20 +91,20 @@ class LoginScreen extends StatelessWidget {
                       //       color: Theme.of(context).secondaryHeaderColor),
                       // ),
                       enabledBorder: UnderlineInputBorder(
-                        borderSide:
-                            BorderSide(color: Theme.of(context).focusColor),
+                        borderSide: BorderSide(
+                          color: Theme.of(context).focusColor,
+                        ),
                       ),
                       focusedBorder: UnderlineInputBorder(
-                        borderSide:
-                            BorderSide(color: Theme.of(context).focusColor),
+                        borderSide: BorderSide(
+                          color: Theme.of(context).focusColor,
+                        ),
                       ),
                     ),
                   ),
                 ],
               ),
-              SizedBox(
-                height: kHeight(context) / 16,
-              ),
+              SizedBox(height: kHeight(context) / 16),
               CustomButton(
                 title: "Login",
                 onTap: () {
@@ -116,25 +112,27 @@ class LoginScreen extends StatelessWidget {
                 },
                 width: kWidth(context),
               ),
-              SizedBox(
-                height: 10,
-              ),
+              SizedBox(height: 10),
               Row(
                 children: [
                   Expanded(
-                      child: Divider(
-                          thickness: 1.2, color: Theme.of(context).focusColor)),
+                    child: Divider(
+                      thickness: 1.2,
+                      color: Theme.of(context).focusColor,
+                    ),
+                  ),
                   SizedBox(width: 14),
                   Text("or"),
                   SizedBox(width: 14),
                   Expanded(
-                      child: Divider(
-                          thickness: 1.2, color: Theme.of(context).focusColor)),
+                    child: Divider(
+                      thickness: 1.2,
+                      color: Theme.of(context).focusColor,
+                    ),
+                  ),
                 ],
               ),
-              SizedBox(
-                height: 10,
-              ),
+              SizedBox(height: 10),
               Column(
                 children: [
                   SizedBox(
@@ -143,8 +141,10 @@ class LoginScreen extends StatelessWidget {
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Color(0xff316FF6),
-                        padding:
-                            EdgeInsets.symmetric(vertical: 12, horizontal: 30),
+                        padding: EdgeInsets.symmetric(
+                          vertical: 12,
+                          horizontal: 30,
+                        ),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(25),
                         ),
@@ -152,10 +152,8 @@ class LoginScreen extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(FontAwesomeIcons.facebook),
-                          SizedBox(
-                            width: 10,
-                          ),
+                          FaIcon(FontAwesomeIcons.facebook),
+                          SizedBox(width: 10),
                           Text(
                             "Continue with Facebook",
                             style: Theme.of(context).textTheme.displaySmall,
@@ -164,18 +162,19 @@ class LoginScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
-                    height: 14,
-                  ),
+                  SizedBox(height: 14),
                   SizedBox(
                     width: kWidth(context),
                     child: ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        backgroundColor:
-                            Theme.of(context).scaffoldBackgroundColor,
-                        padding:
-                            EdgeInsets.symmetric(vertical: 12, horizontal: 30),
+                        backgroundColor: Theme.of(
+                          context,
+                        ).scaffoldBackgroundColor,
+                        padding: EdgeInsets.symmetric(
+                          vertical: 12,
+                          horizontal: 30,
+                        ),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(25),
                           side: BorderSide(color: Theme.of(context).focusColor),
@@ -184,13 +183,11 @@ class LoginScreen extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(
+                          FaIcon(
                             FontAwesomeIcons.google,
                             color: Theme.of(context).iconTheme.color,
                           ),
-                          SizedBox(
-                            width: 10,
-                          ),
+                          SizedBox(width: 10),
                           Text(
                             "Continue with Google",
                             style: Theme.of(context).textTheme.bodyLarge,
@@ -199,18 +196,19 @@ class LoginScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
-                    height: 14,
-                  ),
+                  SizedBox(height: 14),
                   SizedBox(
                     width: kWidth(context),
                     child: ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        backgroundColor:
-                            Theme.of(context).scaffoldBackgroundColor,
-                        padding:
-                            EdgeInsets.symmetric(vertical: 12, horizontal: 30),
+                        backgroundColor: Theme.of(
+                          context,
+                        ).scaffoldBackgroundColor,
+                        padding: EdgeInsets.symmetric(
+                          vertical: 12,
+                          horizontal: 30,
+                        ),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(25),
                           side: BorderSide(color: Theme.of(context).focusColor),
@@ -219,13 +217,11 @@ class LoginScreen extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(
+                          FaIcon(
                             FontAwesomeIcons.apple,
                             color: Theme.of(context).iconTheme.color,
                           ),
-                          SizedBox(
-                            width: 10,
-                          ),
+                          SizedBox(width: 10),
                           Text(
                             "Continue with Apple",
                             style: Theme.of(context).textTheme.bodyLarge,
@@ -236,9 +232,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
-                height: 25,
-              ),
+              SizedBox(height: 25),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.end,
@@ -251,8 +245,10 @@ class LoginScreen extends StatelessWidget {
                     onTap: () {
                       Get.to(() => SignupScreen());
                     },
-                    child: Text("Sign Up",
-                        style: Theme.of(context).textTheme.bodyLarge),
+                    child: Text(
+                      "Sign Up",
+                      style: Theme.of(context).textTheme.bodyLarge,
+                    ),
                   ),
                 ],
               ),
